@@ -1,0 +1,27 @@
+.icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  fill: var(--color-primary-dark);
+
+  &__tell {
+    position: absolute;
+    top: 0.84px;
+    left: 2.69px;
+  }
+
+  &--size-facebook {
+    height: 34px;
+  }
+
+  &__facebook {
+    position: absolute;
+    top: 2.04px;
+    left: 8.23px;
+  }
+  &__instagram {
+    position: absolute;
+    top: 3.75px;
+    left: 3.75px;
+  }
+}

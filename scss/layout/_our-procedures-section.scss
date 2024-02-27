@@ -1,0 +1,46 @@
+.our-procedures-section {
+  padding: 20px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+  }
+
+  &__layout {
+    display: block;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width:$bp-tablet){
+      gap: 32px;
+    }
+  
+  }
+  
+  &__btn {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+
+}

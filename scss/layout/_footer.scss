@@ -1,0 +1,183 @@
+.footer {
+  position: relative;
+  top: 688px;
+
+  background-color: var(--color-primary-dark);
+
+  @media screen and (min-width: $bp-tablet) {
+    top: 0;
+    height: 100%;
+    max-height: 278px;
+  }
+
+  &__container {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 178px;
+    height: 100%;
+    max-height: 388px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1239px;
+      margin: 0 auto;
+      height: auto;
+      padding: 56px 0;
+      text-align: start;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    display: block;
+    text-align: start;
+    width: 57px;
+    margin: 0 auto 42px;
+    font-family: "Play";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.95;
+    text-decoration: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 83px;
+      font-size: 24px;
+      line-height: 0.88;
+      margin: 0;
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      background-image: url("../images/decor-cosmetology-drugs.png");
+      background-repeat: no-repeat;
+      width: 278px;
+      height: 213px;
+      right: -31px;
+      top: 126px;
+      content: "";
+    }
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--color-primary-white);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &--mobile {
+      position: absolute;
+      top: 257px;
+      left: 0;
+
+      @media screen and (min-width: $bp-tablet) {
+        position: relative;
+        top: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0 20px;
+    max-width: 203px;
+  }
+
+  &__addresses {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      margin: 0;
+      padding: 0 10px;
+      max-width: 192px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 48px;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__social-network-container {
+    display: flex;
+    width: 136px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 174px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 20px;
+    padding: 0 21px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0;
+      gap: 24px;
+      padding: 0 10px;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-primary-white);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  &__icon-small-telephone {
+    @media screen and (min-width: $bp-tablet) {
+      width: 35px;
+      height: 40px;
+    }
+  }
+  &__icon-small-facebook {
+    @media screen and (min-width: $bp-tablet) {
+      width: 21.44px;
+      height: 36.75px;
+    }
+  }
+
+  &__icon-small-instagram {
+    @media screen and (min-width: $bp-tablet) {
+      width: 32.16px;
+      height: 32.16px;
+    }
+  }
+  &__data-protection {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-secondary-gray);
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 16px;
+      font-size: 13px;
+      line-height: 1.17;
+      text-align: start;
+    }
+  }
+}

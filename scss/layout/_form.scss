@@ -1,0 +1,97 @@
+.form {
+  width: 272px;
+  height: 350px;
+
+  @media screen and (min-width:$bp-tablet) {
+  width: 310px;
+  height: 385px;
+}
+  &__title {
+    width: 272px;
+    margin: 0 0 24px 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.17;
+    color: var(--color-primary-white);
+
+    @media screen and (min-width:$bp-tablet) {
+      width: 274px;
+      margin: 0 18px 32px 18px;
+    }
+  }
+  &__field {
+    position: relative;
+    margin: 0 15.5px 16px 15.5px;
+    width: 241px;
+    height: 46px;
+    border-radius: 24px;
+
+  @media screen and (min-width:$bp-tablet) {
+    padding: 0;
+     width: 310px;
+    height: 52px;
+     border-radius: 32px;
+     margin: 0 0 16px 0;
+  }
+   
+
+
+  }
+
+  &__controler {
+    position: absolute;
+    width: 100%;
+
+    padding: 16px 24px;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.17;
+    color: var(--color-primary-white);
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--color-secondary-gray);
+    outline: none;
+    transition: background-color 0.2s;
+
+@media screen and (min-width:$bp-tablet){
+   padding: 18px 32.85px;
+  
+}
+
+    &::placeholder {
+      color: var(--color-primary-white);
+    }
+
+    &:focus {
+      background-color: var(--color-secondary-gray);
+    }
+  }
+  &__button-terms-container {
+    margin: 0 auto;
+    width: 241px;
+    text-align: center;
+    @media screen and (min-width:$bp-tablet) {
+      width: 283px;
+    }
+  }
+  
+  &__terms {
+    width: 213px;
+    margin: 0 14px ;
+    @media screen and (min-width:$bp-tablet) {
+      margin: 0 34px;
+      
+    }
+  }
+  &__terms-link {
+    color: var(--color-secondary-gray);
+  }
+}
+
+
+
+
+
+
+

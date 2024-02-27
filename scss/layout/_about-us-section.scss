@@ -1,0 +1,173 @@
+.about-us-section {
+  padding: 13px 0 52px 0;
+  line-height: 1.17;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 0 88px 0;
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-around;
+      gap: 32px;
+      padding: 0 100px;
+      // border: 1px solid blue; //remove
+    }
+  }
+  &__description-container {
+    position: relative;
+    width: 320px;
+    height: 347px;
+    margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 353px;
+      right: 3px;
+      background-image: url("../images/arrow-dark-small.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(30deg);
+      animation: spin 2s infinite linear;
+      content: "";
+
+      @media screen and (min-width: $bp-tablet) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 40px 0 199px 0;
+      width: 709px;
+      height: 456px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    width: 264px;
+    height: 76px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+      width: 529px;
+      height: 148px;
+    }
+  }
+  &__text {
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+      margin-top: 40px;
+    }
+
+    &--text-bold {
+      font-weight: 700;
+      @media screen and (min-width: $bp-tablet) {
+        font-weight: 600;
+      }
+    }
+
+    &:last-child {
+      width: 320px;
+      height: 168px;
+      margin-bottom: 0;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 709px;
+        height: 152px;
+      }
+    }
+  }
+  &__photo-container {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: relative;
+      max-width: 499px;
+      max-height: 695px;
+    }
+  }
+  &__first-photo {
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+    max-height: 328px;
+    margin: 1px 0 20px 4px;
+
+    &::after {
+      position: absolute;
+      right: -20px;
+      top: 33px;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("/images/star-blue.svg");
+      transform: rotate(-30deg);
+      animation: spin 2s infinite linear;
+      content: "";
+    }
+  }
+  &__second-photo {
+    margin: 0 8px 0 164px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+    }
+    &:before {
+      top: 347px;
+      left: 135px;
+      width: 64px;
+      height: 64px;
+      background-image: url("/images/star-dark.svg");
+      transform: rotate(30deg);
+      animation: spin 2s infinite linear;
+    }
+
+    &::after {
+      right: 6px;
+      bottom: 405px;
+      height: 16px;
+      width: 16px;
+      background-image: url("/images/star-small.svg");
+      transform: rotate(22.91deg);
+      animation: 2s infinite spin;
+      animation: small-bigger 2s infinite linear;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate 0;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes small-bigger {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
